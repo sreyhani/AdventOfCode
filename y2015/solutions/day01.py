@@ -1,4 +1,4 @@
-def solv(input):
+def solve_part1(input):
     floor = 0
     for i in input:
         if i == "(":
@@ -8,7 +8,7 @@ def solv(input):
     return floor
 
 
-def solv2(input):
+def solve_part2(input):
     floor = 0
     pos = 1
     for i in input:
@@ -20,8 +20,3 @@ def solv2(input):
             return pos
         pos+=1
     return floor
-
-with open('inputs/01.txt') as f:
-    input = f.read()
-    print(solv(input))
-    print(solv2(input))
